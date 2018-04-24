@@ -4,4 +4,11 @@ Rails.application.routes.draw do
   resources :users
   resources :sessions
   delete '/logout' => 'sessions#destroy', as: :logout
+
+  # 后台管理
+  namespace :admin do
+    root 'sessions#new'
+    resources :sessions
+    resources :categories
+  end
 end

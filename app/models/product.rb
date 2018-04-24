@@ -1,5 +1,5 @@
 class Product < ApplicationRecord
-  begin_to :category
+  belongs_to :category
 
   before_create :set_default_attrs
 
