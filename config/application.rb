@@ -15,6 +15,8 @@ module Library
     # Application configuration should go into files in config/initializers
     # -- all .rb files in that directory are automatically loaded.
 
+    config.autoload_paths += %W[#{/www/library}/lib]
+
     config.generators do |generator|
       generator.assets false
       generator.test_framework false

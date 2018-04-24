@@ -22,7 +22,7 @@ class User < ApplicationRecord
 
 
   private
-  def need_validate_password
+  def need_validate_passwordn
     # 当前记录是否为新记录 是否是新注册得用户id
     self.new_record? ||
         (!self.password.nil? || !self.password_confirmation.nil?)
