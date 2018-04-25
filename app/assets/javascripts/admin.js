@@ -3,9 +3,9 @@
 
 //= require bootstrap-sprockets
 
-//= require jquery-2.1.0
-//= require amazeui.min
-//= require app
-//= require blockUI
-//= require echarts.min
-//= require indexChart
+//= require admin/jquery-2.1.0
+//= require admin/amazeui.min
+//= require admin/app
+//= require admin/blockUI
+//= require admin/echarts.min
+//= require admin/indexChart

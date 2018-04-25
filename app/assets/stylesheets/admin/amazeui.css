@@ -1,12 +1,12 @@
-/* admin */
-
-
-
-
+/*! Amaze UI v2.7.2 | by Amaze UI Team | (c) 2016 AllMobilize, Inc. | Licensed under MIT | 2016-08-17T16:17:24+0800 */
 /* ==========================================================================
    Component: Base
  ============================================================================ */
-
+/**
+ * Fix the flawed CSS box model - Yes, IE6's box model is better
+ * Browser support: IE8+
+ * via: http://paulirish.com/2012/box-sizing-border-box-ftw/
+ */
 *,
 *:before,
 *:after {
