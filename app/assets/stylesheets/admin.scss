@@ -1,7 +1,4 @@
 /*
- *= require bootstrap-sprockets
- *= require bootstrap
- *= require font-awesome
  *= require admin/adminto
  *= require admin/amazeui
  *= require admin/component
@@ -10,4 +7,8 @@
  *= require admin/menu
  *= require admin/typography
  */
+
+ @import "bootstrap-sprockets";
+ @import "bootstrap";
+ @import "font-awesome";
 
