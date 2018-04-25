@@ -4,17 +4,9 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>后台模板</title>
-  <link rel="stylesheet" href="assets/stylesheets/admin/amazeui.css" />
-  <link rel="stylesheet" href="assets/stylesheets/admin/core.css" />
-  <link rel="stylesheet" href="assets/stylesheets/admin/menu.css" />
-  <link rel="stylesheet" href="assets/stylesheets/admin/index.css" />
-  <link rel="stylesheet" href="assets/stylesheets/admin/admin.css" />
-  <link rel="stylesheet" href="assets/stylesheets/admin/typography.css" />
-  <link rel="stylesheet" href="assets/stylesheets/admin/form.css" />
-  <link rel="stylesheet" href="assets/stylesheets/admin/component.css" />
 </head>
 <body>
-<!-- Begin page -->
+
 <header class="am-topbar am-topbar-fixed-top">
   <div class="am-topbar-left am-hide-sm-only">
     <a href="<%= admin_root_path %>" class="logo"><span>Admin<span>to</span></span><i class="zmdi zmdi-layers"></i></a>
@@ -32,7 +24,7 @@
       <li class="hidden-xs am-hide-sm-only">
         <form role="search" class="app-search">
           <input type="text" placeholder="Search..." class="form-control">
-          <a href=""><img src="assets/img/search.png"></a>
+          <a href=""><img src="/assets/search.png"></a>
         </form>
       </li>
     </ul>
@@ -47,7 +39,7 @@
       <!-- User -->
       <div class="user-box am-hide-sm-only">
         <div class="user-img">
-          <img src="assets/img/gaitubao.jpg" alt="user-img" title="Haley" class="img-circle img-thumbnail img-responsive">
+          <img src="/assets/gaitubiao.jpg" alt="user-img" title="Haley" class="img-circle img-thumbnail img-responsive">
           <div class="user-status offline"><i class="am-icon-dot-circle-o" aria-hidden="true"></i></div>
         </div>
         <h5><a href="#">Haley</a> </h5>
@@ -96,16 +88,6 @@
   </div>
 </div>
 </div>
-
-
 <a href="admin-offcanvas" class="am-icon-btn am-icon-th-list am-show-sm-only admin-menu" data-am-offcanvas="{target: '#admin-offcanvas'}"><!--<i class="fa fa-bars" aria-hidden="true"></i>--></a>
-
-<script type="text/javascript" src="assets/js/jquery-2.1.0.js" ></script>
-<script type="text/javascript" src="assets/js/amazeui.min.js"></script>
-<script type="text/javascript" src="assets/js/app.js" ></script>
-<script type="text/javascript" src="assets/js/blockUI.js" ></script>
-<script type="text/javascript" src="assets/js/charts/echarts.min.js" ></script>
-<script type="text/javascript" src="assets/js/charts/indexChart.js" ></script>
-
 </body>
 </html>
