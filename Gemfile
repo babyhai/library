@@ -25,6 +25,7 @@ gem 'font-awesome-rails'
 gem 'sorcery'
 gem 'ancestry'
 gem 'will_paginate'
+gem 'paperclip', '~> 5.0.0'
 
 
 gem 'coffee-rails', '~> 4.2'
