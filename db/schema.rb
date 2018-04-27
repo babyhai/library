@@ -23,7 +23,7 @@ ActiveRecord::Schema.define(version: 20180427062324) do
     t.index ["title"], name: "index_categories_on_title"
   end
 
-  create_table "product_imges", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
+  create_table "product_images", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
     t.bigint "product_id"
     t.integer "weight", default: 0
     t.string "image_file_name"

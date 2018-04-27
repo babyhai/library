@@ -3,7 +3,7 @@ class Admin::ProductImagesController < Admin::BaseController
   before_action :find_product
 
   def index
-    @product_imges = @product.product_imges
+    @product_images = @product.product_images
   end
 
   def create
