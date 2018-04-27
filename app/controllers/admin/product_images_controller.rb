@@ -1,5 +1,5 @@
 class Admin::ProductImagesController < Admin::BaseController
-
+# 商品图片
   before_action :find_product
 
   def index
