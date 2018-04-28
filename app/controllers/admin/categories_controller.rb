@@ -15,11 +15,9 @@ class Admin::CategoriesController < Admin::BaseController
                       .order(id: "desc")
   end
 
-
   def new
     @category = Category.new
   end
-
 
   def create
     @category = Category.new(params.require(:category).permit!)
@@ -43,7 +41,7 @@ class Admin::CategoriesController < Admin::BaseController
       flash[:notice] = "修改成功"
       redirect_to admin_categories_path
     else
-      render adtion: :new
+      render action: :new
     end
   end
 
@@ -65,4 +63,5 @@ class Admin::CategoriesController < Admin::BaseController
   def find_category
     @category = Category.find(params[:id])
   end
+
 end

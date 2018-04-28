@@ -7,9 +7,10 @@ class Admin::ProductImagesController < Admin::BaseController
   end
 
   def create
-    params[:imges].each do |imge|
-      @product.product_imges << ProductImage.new(imge: imge)
+    params[:images].each do |image|
+      @product.product_images << ProductImage.new(image: image)
     end
+
     redirect_to :back
   end
 
