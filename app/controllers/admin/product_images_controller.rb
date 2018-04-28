@@ -11,7 +11,8 @@ class Admin::ProductImagesController < Admin::BaseController
       @product.product_images << ProductImage.new(image: image)
     end
 
-    redirect_to :back
+    redirect_back(fallback_location: admin_product_product_images_path(product_id: @product))
+
   end
 
   def destroy
@@ -22,7 +23,7 @@ class Admin::ProductImagesController < Admin::BaseController
       flash[:notice] = "删除失败！"
     end
 
-    redirect_to :back
+    redirect_back(fallback_location: admin_product_product_images_path(product_id: @product))
   end
 
   def update
@@ -34,7 +35,7 @@ class Admin::ProductImagesController < Admin::BaseController
       flash[:notice] = "修改失败！"
     end
 
-    redirect_to :back
+    redirect_back(fallback_location: admin_product_product_images_path(product_id: @product))
   end
 
 
