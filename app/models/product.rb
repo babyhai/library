@@ -15,11 +15,17 @@ class Product < ApplicationRecord
   validates :price, presence: { message: "价格不能为空" }
   validates :description, presence: { message: "描述不能为空" }
 
+
   belongs_to :category
   has_many :product_images, -> { order(weight: 'desc') },
            dependent: :destroy
+  has_one :main_product_image, -> { order(weight: 'desc') },
+          class_name: :ProductImage
+
 
   before_create :set_default_attrs
+  scope :onshelf, -> { where(status: Status::On) }
+
 
   module Status
     On = 'on'
